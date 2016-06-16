@@ -52,7 +52,7 @@ namespace UpholdPaymentUrlSample
       var payload = b64header + "." + b64claims;
       var sig = CreateToken(payload, upholdSecret);
 
-      string redirectUrl = "https://you-redirect-url";
+      string redirectUrl = "https://your-redirect-url";
 
 
       string qParam = "?redirectTo=" + redirectUrl + "&token=​" + payload + "." + sig + "";
